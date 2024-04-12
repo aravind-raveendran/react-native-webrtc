@@ -31,4 +31,5 @@ android {
 dependencies {
     implementation 'com.facebook.react:react-native:+'
     implementation files('libs/libwebrtc.jar')
+    implementation files('libs/libjingle_peerconnection.so.jar')
 }
