@@ -10,6 +10,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong, nullable) id<RTCAudioDevice> audioDevice;
 @property(nonatomic, strong, nullable) NSDictionary *fieldTrials;
 @property(nonatomic, assign) RTCLoggingSeverity loggingSeverity;
+@property(atomic, assing) bool audioRecvOnlyMode;
 
 #pragma mark - This class is a singleton
 
