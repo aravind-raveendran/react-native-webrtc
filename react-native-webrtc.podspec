@@ -19,5 +19,9 @@ Pod::Spec.new do |s|
   s.libraries           = 'c', 'sqlite3', 'stdc++'
   s.framework           = 'AudioToolbox','AVFoundation', 'CoreAudio', 'CoreGraphics', 'CoreVideo', 'GLKit', 'VideoToolbox'
   s.dependency          'React-Core'
-  s.dependency          'JitsiWebRTC', '~> 118.0.0'
+
+  # Note: Update to consume local WebRTC.xcframework
+  # To be supplied as a local pod in the RN Application project
+  # TODO: Move the dependency to be consumed from a private pod specs repo instead
+  s.dependency          'WebRTC'
 end
