@@ -20,8 +20,6 @@ Pod::Spec.new do |s|
   s.framework           = 'AudioToolbox','AVFoundation', 'CoreAudio', 'CoreGraphics', 'CoreVideo', 'GLKit', 'VideoToolbox'
   s.dependency          'React-Core'
 
-  # Note: Update to consume local WebRTC.xcframework
-  # To be supplied as a local pod in the RN Application project
-  # TODO: Move the dependency to be consumed from a private pod specs repo instead
-  s.dependency          'WebRTC'
+  # Note: Need to be supplied by a private pod specs repo
+  s.dependency          'RNMillicastWebRTC', '~> 118.0.0'
 end
